@@ -9,7 +9,9 @@ describe('registration Test', () => {
       cy.get('span>input[id="user_pass"]').type('rony');
       cy.wait(5000);
      // cy.get('#user_confirm_password').scrollIntoView().type('rony');
-      cy.get('span>input[id="user_confirm_password"]').click().contains('rony')
+      cy.get('span>input[id="user_confirm_password"]').type('rony')
+      cy.get('textarea[id="description"]').type('Please Type your Bio')
+      cy.get('button[type="submit"]').click()
    
 
   })
